@@ -3,49 +3,110 @@
     padding:0;
     font-size: 1rem;
 }
+
+@font-face {
+    font-family: logo-font;
+    src: url('Norse-Bold.otf');
+}
+
 body {
-    background-image: url('images/background.png')
-    
-    
+    background-image: url('images/background.png');
+     
 }
-
-.logo {
-    background: rgba(0,0,0,0.2);
-    padding: 20px;
-
-}
-
-.logo-container {
-   
-        width: 40vw;
-        height: auto;
-        margin-top: 20vh;      
-
-}
-
 .container {
   display: flex;
 }
 
+.logo-container {
+     margin-top: 20vh;
+}
+
+.logo {
+    background: rgba(0,0,0,0.2);
+    width: 40vw;
+    padding: 20px;
+}
+
+.odin_font{
+    font-family: logo-font, monospace;
+    font-size: 6em;
+    color: white;
+    text-align: right;
+}
+
+.form-container {
+    margin-top: 0vh;
+    padding-left: 5vw;
+    margin-bottom: 0;
+    width: 60vw;
+    height: 100vh;
+    height: auto;
+    background-color: black;
+    color: white;
+}
+
+.text {
+    margin-top: 20vh;
+}
+
 .form_grid {
     display: grid;
-    grid-template-columns: repeat(3);
-    grid-template-rows: repeat(2);
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto;
+    
+
+    
 }
+
+.form_grid > div {
+        padding: 5px;
+
+}
+
 i {
     font-size: 1em;
 }
 
+input {
+    width: 20vw;
+    border-radius: 5px;
+    
+}
+
+input:hover {
+    border-color: rgb(17, 248, 9);
+}
+
 p {
     line-height: 1.5em;
-font-size: 2em;
+    font-size: 2em;
 }
+
 .you{
     margin-top: 1.5em;
 }
+
 .form {
     margin-top: 6em;
 }
 label {
-    font-size: 1.5em;
+    font-size: 1.1em;
+}
+
+button {
+    margin-top: 40px;
+    margin-left: 5px;
+    margin-bottom: 2em;
+    color: blue;
+    background-color: yellow;
+    width: 10em;
+    height: 2em;
+    border-radius: 5px;
+}
+.account, a {
+    font-size: 1.2em;
+    margin-bottom: 10vh;
+}
+a {
+    color: yellow;
 }
