@@ -1,4 +1,51 @@
 *{
     margin:0;
     padding:0;
+    font-size: 1rem;
+}
+body {
+    background-image: url('images/background.png')
+    
+    
+}
+
+.logo {
+    background: rgba(0,0,0,0.2);
+    padding: 20px;
+
+}
+
+.logo-container {
+   
+        width: 40vw;
+        height: auto;
+        margin-top: 20vh;      
+
+}
+
+.container {
+  display: flex;
+}
+
+.form_grid {
+    display: grid;
+    grid-template-columns: repeat(3);
+    grid-template-rows: repeat(2);
+}
+i {
+    font-size: 1em;
+}
+
+p {
+    line-height: 1.5em;
+font-size: 2em;
+}
+.you{
+    margin-top: 1.5em;
+}
+.form {
+    margin-top: 6em;
+}
+label {
+    font-size: 1.5em;
 }
