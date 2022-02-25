@@ -15,23 +15,37 @@ body {
 }
 .container {
   display: flex;
+  flex-wrap: nowrap;
 }
 
 .logo-container {
      margin-top: 20vh;
+     position: relative;
 }
+
+
 
 .logo {
     background: rgba(0,0,0,0.2);
-    width: 40vw;
+    width: 45vw;
     padding: 20px;
+    height: 10vh;
+}
+
+.odin-logo {
+    height: 13vh;
+    position: absolute;
+    top: 1vh;
+    left: 15vw;
 }
 
 .odin_font{
     font-family: logo-font, monospace;
     font-size: 6em;
     color: white;
-    text-align: right;
+   position: absolute;
+   top: 3vh;
+   right: 12vw;
 }
 
 .form-container {
@@ -41,8 +55,8 @@ body {
     width: 60vw;
     height: 100vh;
     height: auto;
-    background-color: black;
-    color: white;
+    background-color: rgb(247, 241, 241);
+    color: black(255, 255, 255);
 }
 
 .text {
@@ -53,14 +67,10 @@ body {
     display: grid;
     grid-template-columns: auto auto;
     grid-template-rows: auto auto auto;
-    
-
-    
 }
 
 .form_grid > div {
         padding: 5px;
-
 }
 
 i {
@@ -70,11 +80,10 @@ i {
 input {
     width: 20vw;
     border-radius: 5px;
-    
 }
 
-input:hover {
-    border-color: rgb(17, 248, 9);
+#last_name:hover {
+    border: solid 2px rgb(31, 135, 204);
 }
 
 p {
@@ -89,6 +98,7 @@ p {
 .form {
     margin-top: 6em;
 }
+
 label {
     font-size: 1.1em;
 }
@@ -97,16 +107,37 @@ button {
     margin-top: 40px;
     margin-left: 5px;
     margin-bottom: 2em;
-    color: blue;
-    background-color: yellow;
+    color: white;
+    background-color: rgb(14, 90, 43);
     width: 10em;
     height: 2em;
     border-radius: 5px;
+    box-shadow: none;
 }
-.account, a {
+
+button:hover {
+    background-color: green;
+        box-shadow: none;
+
+
+}
+
+.account {
     font-size: 1.2em;
     margin-bottom: 10vh;
 }
+
 a {
-    color: yellow;
+    font-size: 1em;
+    font-family: logo-font, monospace;
+    color: green;
+}
+
+a:hover {
+    color: orange;
+}
+
+input:required {
+  border-color: #ec0b0b;
+  border-width: 3px;
 }
